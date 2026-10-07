@@ -1,910 +1,1318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Igreja Reformada Comunidade da Cruz · Maceió – AL</title>
-  
-  <!-- SEO & Open Graph Meta Tags -->
-  <meta name="description" content="Igreja Reformada Comunidade da Cruz em Maceió - AL. Uma igreja reformada comprometida em amar a Cristo, viver em Cristo e anunciar a Cristo.">
-  <meta name="keywords" content="Igreja Reformada, Comunidade da Cruz, Maceió, Serraria, Sertão Alagoano, Missio Dei, Culto, Escola Dominical">
-  <meta name="author" content="Igreja Reformada Comunidade da Cruz">
-  <meta property="og:title" content="Igreja Reformada Comunidade da Cruz · Maceió – AL">
-  <meta property="og:description" content="Somos uma igreja reformada comprometida em amar a Cristo, viver em Cristo e anunciar a Cristo. Conheça nossos horários e planeje sua visita.">
-  <meta property="og:image" content="assets/hero-worship.png">
-  <meta property="og:type" content="website">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igreja Reformada Comunidade da Cruz · Maceió – AL</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/logo-header.png">
+    <!-- SEO & Open Graph Meta Tags -->
+    <meta
+      name="description"
+      content="Igreja Reformada Comunidade da Cruz em Maceió - AL. Uma igreja reformada comprometida em amar a Cristo, viver em Cristo e anunciar a Cristo."
+    />
+    <meta
+      name="keywords"
+      content="Igreja Reformada, Comunidade da Cruz, Maceió, Serraria, Sertão Alagoano, Missio Dei, Culto, Escola Dominical"
+    />
+    <meta name="author" content="Igreja Reformada Comunidade da Cruz" />
+    <meta
+      property="og:title"
+      content="Igreja Reformada Comunidade da Cruz · Maceió – AL"
+    />
+    <meta
+      property="og:description"
+      content="Somos uma igreja reformada comprometida em amar a Cristo, viver em Cristo e anunciar a Cristo. Conheça nossos horários e planeje sua visita."
+    />
+    <meta property="og:image" content="assets/hero-worship.png" />
+    <meta property="og:type" content="website" />
 
-  <!-- Google Fonts: Playfair Display (Headings & Italic Accents) & Inter (Clean Body Text) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo-header.png" />
 
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <!-- Google Fonts: Playfair Display (Headings & Italic Accents) & Inter (Clean Body Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ==========================================================================
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ==========================================================================
        HEADER & NAVIGATION BAR
        ========================================================================== -->
-  <header class="header" id="header">
-    <div class="header-inner">
-      <a href="#inicio" class="logo-link" aria-label="Comunidade da Cruz - Início">
-        <img src="assets/logo-header.png" alt="Igreja Reformada Comunidade da Cruz" class="site-logo">
-      </a>
-      <button class="menu-btn" id="menuToggleBtn" aria-label="Abrir Menu de Navegação">
-        <span class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <span class="menu-label">MENU</span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Fullscreen / Slide Navigation Overlay -->
-  <div class="nav-overlay" id="navOverlay" aria-hidden="true">
-    <div class="nav-overlay-content">
-      <div class="nav-overlay-header">
-        <img src="assets/logo-header.png" alt="Comunidade da Cruz" class="nav-overlay-logo">
-        <button class="nav-close-btn" id="navCloseBtn" aria-label="Fechar Menu">&times;</button>
+    <header class="header" id="header">
+      <div class="header-inner">
+        <a
+          href="#inicio"
+          class="logo-link"
+          aria-label="Comunidade da Cruz - Início"
+        >
+          <img
+            src="assets/logo-header.png"
+            alt="Igreja Reformada Comunidade da Cruz"
+            class="site-logo"
+          />
+        </a>
+        <button
+          class="menu-btn"
+          id="menuToggleBtn"
+          aria-label="Abrir Menu de Navegação"
+        >
+          <span class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="menu-label">MENU</span>
+        </button>
       </div>
-      <div class="nav-overlay-body">
-        <span class="nav-section-label">NAVEGAÇÃO</span>
-        <ul class="nav-menu-list">
-          <li><a href="#inicio" class="nav-menu-link">Início</a></li>
-          <li><a href="#horarios" class="nav-menu-link">Horários</a></li>
-          <li><a href="#nossa-igreja" class="nav-menu-link">Nossa Igreja</a></li>
-          <li><a href="#proposito" class="nav-menu-link">Nosso Propósito</a></li>
-          <li><a href="#missoes" class="nav-menu-link">Missões</a></li>
-          <li><a href="#missio-dei" class="nav-menu-link">Instituto Missio Dei</a></li>
-          <li><a href="#missionarios" class="nav-menu-link">Missionários</a></li>
-          <li><a href="#nossa-fe" class="nav-menu-link">Nossa Fé</a></li>
-          <li><a href="#lideranca" class="nav-menu-link">Liderança</a></li>
-          <li><a href="#como-se-envolver" class="nav-menu-link">Como se Envolver</a></li>
-          <li><a href="#eventos" class="nav-menu-link">Eventos</a></li>
-          <li><a href="#midia" class="nav-menu-link">Mídia</a></li>
-          <li><a href="#contribua" class="nav-menu-link">Contribua</a></li>
-          <li><a href="#visite-nos" class="nav-menu-link">Visite-nos</a></li>
-        </ul>
+    </header>
 
-        <div class="nav-overlay-footer">
-          <span class="nav-section-label">CONTATO RÁPIDO</span>
-          <p>Av. Presidente Getúlio Vargas, S/N · Serraria · Maceió – AL</p>
-          <a href="https://wa.me/5582996298697" target="_blank" rel="noopener noreferrer" class="nav-whatsapp-link">
-            WhatsApp (82) 99629-8697
-          </a>
+    <!-- Fullscreen / Slide Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+      <div class="nav-overlay-content">
+        <div class="nav-overlay-header">
+          <img
+            src="assets/logo-header.png"
+            alt="Comunidade da Cruz"
+            class="nav-overlay-logo"
+          />
+          <button
+            class="nav-close-btn"
+            id="navCloseBtn"
+            aria-label="Fechar Menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="nav-overlay-body">
+          <span class="nav-section-label">NAVEGAÇÃO</span>
+          <ul class="nav-menu-list">
+            <li><a href="#inicio" class="nav-menu-link">Início</a></li>
+            <li><a href="#horarios" class="nav-menu-link">Horários</a></li>
+            <li>
+              <a href="#nossa-igreja" class="nav-menu-link">Nossa Igreja</a>
+            </li>
+            <li>
+              <a href="#proposito" class="nav-menu-link">Nosso Propósito</a>
+            </li>
+            <li><a href="#missoes" class="nav-menu-link">Missões</a></li>
+            <li>
+              <a href="#missio-dei" class="nav-menu-link"
+                >Instituto Missio Dei</a
+              >
+            </li>
+            <li>
+              <a href="#missionarios" class="nav-menu-link">Missionários</a>
+            </li>
+            <li><a href="#nossa-fe" class="nav-menu-link">Nossa Fé</a></li>
+            <li><a href="#lideranca" class="nav-menu-link">Liderança</a></li>
+            <li>
+              <a href="#como-se-envolver" class="nav-menu-link"
+                >Como se Envolver</a
+              >
+            </li>
+            <li><a href="#eventos" class="nav-menu-link">Eventos</a></li>
+            <li><a href="#midia" class="nav-menu-link">Mídia</a></li>
+            <li><a href="#contribua" class="nav-menu-link">Contribua</a></li>
+            <li><a href="#visite-nos" class="nav-menu-link">Visite-nos</a></li>
+          </ul>
+
+          <div class="nav-overlay-footer">
+            <span class="nav-section-label">CONTATO RÁPIDO</span>
+            <p>Av. Presidente Getúlio Vargas, S/N · Serraria · Maceió – AL</p>
+            <a
+              href="https://wa.me/5582996298697"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-whatsapp-link"
+            >
+              WhatsApp (82) 99629-8697
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <main>
-    <!-- ==========================================================================
+    <main>
+      <!-- ==========================================================================
          HERO SECTION
          ========================================================================== -->
-    <section class="section section-hero" id="inicio">
-      <div class="hero-bg" style="background-image: url('assets/hero-worship.png');"></div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-container">
-        <div class="hero-content">
-          <p class="section-badge-tracked">IGREJA REFORMADA COMUNIDADE DA CRUZ · MACEIÓ – AL</p>
-          <h1 class="hero-title">
-            Seja <span class="italic-accent">bem-vindo!</span>
-          </h1>
-          <p class="hero-subtitle">
-            Somos uma igreja reformada comprometida em <strong>amar a Cristo, viver em Cristo e anunciar a Cristo.</strong>
-          </p>
-          <div class="hero-buttons">
-            <a href="#visite-nos" class="btn btn-primary">Planeje sua visita</a>
-            <a href="#missoes" class="btn btn-outline">Uma igreja missionária →</a>
+      <section class="section section-hero" id="inicio">
+        <div
+          class="hero-bg"
+          style="background-image: url(&quot;assets/hero-worship.png&quot;)"
+        ></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="section-badge-tracked">
+              IGREJA REFORMADA COMUNIDADE DA CRUZ · MACEIÓ – AL
+            </p>
+            <h1 class="hero-title">
+              Seja <span class="italic-accent">bem-vindo!</span>
+            </h1>
+            <p class="hero-subtitle">
+              Somos uma igreja reformada comprometida em
+              <strong
+                >amar a Cristo, viver em Cristo e anunciar a Cristo.</strong
+              >
+            </p>
+            <div class="hero-buttons">
+              <a href="#visite-nos" class="btn btn-primary"
+                >Planeje sua visita</a
+              >
+              <a href="#missoes" class="btn btn-outline"
+                >Uma igreja missionária →</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          PROGRAMAÇÃO SEMANAL / NOSSOS HORÁRIOS
          ========================================================================== -->
-    <section class="section section-dark section-schedule" id="horarios">
-      <div class="container">
-        <div class="schedule-header">
-          <div class="schedule-title-block">
-            <p class="section-badge-tracked">PROGRAMAÇÃO SEMANAL</p>
-            <h2 class="section-title text-light">
-              Nossos <span class="italic-accent">horários</span>
-            </h2>
+      <section class="section section-dark section-schedule" id="horarios">
+        <div class="container">
+          <div class="schedule-header">
+            <div class="schedule-title-block">
+              <p class="section-badge-tracked">PROGRAMAÇÃO SEMANAL</p>
+              <h2 class="section-title text-light">
+                Nossos <span class="italic-accent">horários</span>
+              </h2>
+            </div>
+            <div class="schedule-intro-text">
+              <p>
+                Todos são bem-vindos. Venha cultuar conosco — as portas estão
+                abertas.
+              </p>
+            </div>
           </div>
-          <div class="schedule-intro-text">
-            <p>Todos são bem-vindos. Venha cultuar conosco — as portas estão abertas.</p>
+
+          <!-- Cards Grid -->
+          <div class="schedule-grid">
+            <!-- Card 1 -->
+            <div class="schedule-card card-cream">
+              <span class="card-tag">DOMINGO</span>
+              <span class="card-time">9h30</span>
+              <h3 class="card-title">Escola Bíblica Dominical</h3>
+              <p class="card-desc">Estudo bíblico para todas as idades.</p>
+            </div>
+
+            <!-- Card 2 (Terracotta highlight) -->
+            <div class="schedule-card card-terracotta">
+              <span class="card-tag">DOMINGO</span>
+              <span class="card-time">18h</span>
+              <h3 class="card-title">Culto de Adoração</h3>
+              <p class="card-desc">Nosso principal encontro da semana.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="schedule-card card-cream">
+              <span class="card-tag">1º DOMINGO DO MÊS</span>
+              <span class="card-time">18h</span>
+              <h3 class="card-title">Santa Ceia</h3>
+              <p class="card-desc">Celebrada durante o Culto de Adoração.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="schedule-card card-cream">
+              <span class="card-tag">QUINTA-FEIRA</span>
+              <span class="card-time">19h30</span>
+              <h3 class="card-title">Reunião de Oração</h3>
+              <p class="card-desc">Momento de intercessão e comunhão.</p>
+            </div>
+          </div>
+
+          <!-- Location Callout Box -->
+          <div class="location-callout">
+            <div class="location-info">
+              <span class="callout-label">ONDE</span>
+              <p class="callout-address">
+                Av. Presidente Getúlio Vargas, S/N – Serraria · Maceió – AL
+              </p>
+            </div>
+            <div class="location-actions">
+              <a
+                href="https://maps.google.com/?q=Av.+Presidente+Getúlio+Vargas,+Serraria,+Maceió+-+AL"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-light"
+                >Como chegar</a
+              >
+              <a href="#visite-nos" class="btn btn-primary"
+                >Planeje sua visita</a
+              >
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- Cards Grid -->
-        <div class="schedule-grid">
-          <!-- Card 1 -->
-          <div class="schedule-card card-cream">
-            <span class="card-tag">DOMINGO</span>
-            <span class="card-time">9h30</span>
-            <h3 class="card-title">Escola Bíblica Dominical</h3>
-            <p class="card-desc">Estudo bíblico para todas as idades.</p>
-          </div>
+      <!-- Top Orange Border Divider -->
+      <div class="accent-border-line"></div>
 
-          <!-- Card 2 (Terracotta highlight) -->
-          <div class="schedule-card card-terracotta">
-            <span class="card-tag">DOMINGO</span>
-            <span class="card-time">18h</span>
-            <h3 class="card-title">Culto de Adoração</h3>
-            <p class="card-desc">Nosso principal encontro da semana.</p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="schedule-card card-cream">
-            <span class="card-tag">1º DOMINGO DO MÊS</span>
-            <span class="card-time">18h</span>
-            <h3 class="card-title">Santa Ceia</h3>
-            <p class="card-desc">Celebrada durante o Culto de Adoração.</p>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="schedule-card card-cream">
-            <span class="card-tag">QUINTA-FEIRA</span>
-            <span class="card-time">19h30</span>
-            <h3 class="card-title">Reunião de Oração</h3>
-            <p class="card-desc">Momento de intercessão e comunhão.</p>
-          </div>
-        </div>
-
-        <!-- Location Callout Box -->
-        <div class="location-callout">
-          <div class="location-info">
-            <span class="callout-label">ONDE</span>
-            <p class="callout-address">Av. Presidente Getúlio Vargas, S/N – Serraria · Maceió – AL</p>
-          </div>
-          <div class="location-actions">
-            <a href="https://maps.google.com/?q=Av.+Presidente+Getúlio+Vargas,+Serraria,+Maceió+-+AL" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">Como chegar</a>
-            <a href="#visite-nos" class="btn btn-primary">Planeje sua visita</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Top Orange Border Divider -->
-    <div class="accent-border-line"></div>
-
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          NOSSA IGREJA
          ========================================================================== -->
-    <section class="section section-cream section-about" id="nossa-igreja">
-      <div class="container">
-        <!-- Church community photo -->
-        <div class="about-hero-image-wrapper">
-          <img src="assets/church-community.png" alt="Comunidade da Cruz em Adoração" class="rounded-image shadow-md">
-        </div>
+      <section class="section section-cream section-about" id="nossa-igreja">
+        <div class="container">
+          <!-- Church community photo -->
+          <div class="about-hero-image-wrapper">
+            <img
+              src="assets/church-community.png"
+              alt="Comunidade da Cruz em Adoração"
+              class="rounded-image shadow-md"
+            />
+          </div>
 
-        <div class="about-text-content">
-          <p class="section-badge-tracked">NOSSA IGREJA</p>
-          <h2 class="section-title text-dark">
-            Estamos contentes por <span class="italic-accent">você estar aqui</span>
-          </h2>
-          <p class="lead-paragraph">
-            Somos gratos a Deus pelo seu interesse em conhecer a Comunidade da Cruz. Aqui você encontra respostas para dúvidas que possa ter sobre a nossa igreja — e, se quiser saber mais, sinta-se à vontade para nos procurar.
-          </p>
+          <div class="about-text-content">
+            <p class="section-badge-tracked">NOSSA IGREJA</p>
+            <h2 class="section-title text-dark">
+              Estamos contentes por
+              <span class="italic-accent">você estar aqui</span>
+            </h2>
+            <p class="lead-paragraph">
+              Somos gratos a Deus pelo seu interesse em conhecer a Comunidade da
+              Cruz. Aqui você encontra respostas para dúvidas que possa ter
+              sobre a nossa igreja — e, se quiser saber mais, sinta-se à vontade
+              para nos procurar.
+            </p>
 
-          <!-- 3 Columns with Orange Top Line -->
-          <div class="pillars-three-cols">
-            <div class="pillar-col">
-              <h3 class="pillar-title">Reformada</h3>
-              <p class="pillar-desc">Fé bíblica, histórica e confessional.</p>
-            </div>
-            <div class="pillar-col">
-              <h3 class="pillar-title">Missionária</h3>
-              <p class="pillar-desc">Comprometida com o sertão alagoano.</p>
-            </div>
-            <div class="pillar-col">
-              <h3 class="pillar-title">Local</h3>
-              <p class="pillar-desc">Serraria · Maceió – AL</p>
+            <!-- 3 Columns with Orange Top Line -->
+            <div class="pillars-three-cols">
+              <div class="pillar-col">
+                <h3 class="pillar-title">Reformada</h3>
+                <p class="pillar-desc">Fé bíblica, histórica e confessional.</p>
+              </div>
+              <div class="pillar-col">
+                <h3 class="pillar-title">Missionária</h3>
+                <p class="pillar-desc">Comprometida com o sertão alagoano.</p>
+              </div>
+              <div class="pillar-col">
+                <h3 class="pillar-title">Local</h3>
+                <p class="pillar-desc">Serraria · Maceió – AL</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          NOSSO PROPÓSITO
          ========================================================================== -->
-    <section class="section section-dark section-purpose" id="proposito">
-      <div class="container">
-        <p class="section-badge-tracked">NOSSO PROPÓSITO</p>
-        <h2 class="section-title text-light">
-          Cristo no <span class="italic-accent">centro</span>
-        </h2>
-        <p class="lead-paragraph text-cream-muted purpose-summary">
-          Glorificar a Deus, amá-lo de todo o nosso coração e anunciá-lo a todos, pregando e ensinando o Evangelho, amando uns aos outros e sendo misericordiosos.
-        </p>
+      <section class="section section-dark section-purpose" id="proposito">
+        <div class="container">
+          <p class="section-badge-tracked">NOSSO PROPÓSITO</p>
+          <h2 class="section-title text-light">
+            Cristo no <span class="italic-accent">centro</span>
+          </h2>
+          <p class="lead-paragraph text-cream-muted purpose-summary">
+            Glorificar a Deus, amá-lo de todo o nosso coração e anunciá-lo a
+            todos, pregando e ensinando o Evangelho, amando uns aos outros e
+            sendo misericordiosos.
+          </p>
 
-        <!-- 3 Purpose Cards (Roman Numerals) -->
-        <div class="purpose-cards-grid">
-          <div class="purpose-card card-cream">
-            <span class="roman-numeral">I</span>
-            <h3 class="purpose-card-title">Amar a Cristo</h3>
-            <p class="purpose-card-desc">Glorificar a Deus e amá-lo de todo o nosso coração.</p>
-          </div>
+          <!-- 3 Purpose Cards (Roman Numerals) -->
+          <div class="purpose-cards-grid">
+            <div class="purpose-card card-cream">
+              <span class="roman-numeral">I</span>
+              <h3 class="purpose-card-title">Amar a Cristo</h3>
+              <p class="purpose-card-desc">
+                Glorificar a Deus e amá-lo de todo o nosso coração.
+              </p>
+            </div>
 
-          <div class="purpose-card card-cream">
-            <span class="roman-numeral">II</span>
-            <h3 class="purpose-card-title">Viver em Cristo</h3>
-            <p class="purpose-card-desc">Amando uns aos outros e sendo misericordiosos, como corpo de Cristo.</p>
-          </div>
+            <div class="purpose-card card-cream">
+              <span class="roman-numeral">II</span>
+              <h3 class="purpose-card-title">Viver em Cristo</h3>
+              <p class="purpose-card-desc">
+                Amando uns aos outros e sendo misericordiosos, como corpo de
+                Cristo.
+              </p>
+            </div>
 
-          <div class="purpose-card card-cream">
-            <span class="roman-numeral">III</span>
-            <h3 class="purpose-card-title">Anunciar a Cristo</h3>
-            <p class="purpose-card-desc">Pregando e ensinando o Evangelho a todos os povos.</p>
+            <div class="purpose-card card-cream">
+              <span class="roman-numeral">III</span>
+              <h3 class="purpose-card-title">Anunciar a Cristo</h3>
+              <p class="purpose-card-desc">
+                Pregando e ensinando o Evangelho a todos os povos.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          MISSÕES
          ========================================================================== -->
-    <section class="section section-dark section-missions" id="missoes">
-      <div class="missions-bg" style="background-image: url('assets/missions-guitar.png');"></div>
-      <div class="missions-overlay"></div>
-      <div class="container missions-content">
-        <p class="section-badge-tracked">MISSÕES</p>
-        <h2 class="section-title text-light">
-          Uma igreja <span class="italic-accent">missionária</span>
-        </h2>
-        <p class="missions-lead">
-          A missão não é apenas uma atividade da igreja. <span class="italic-accent">Ela faz parte da nossa identidade.</span>
-        </p>
-        <p class="missions-body">
-          Entendemos a responsabilidade que Deus pôs sobre a Sua Igreja: pregar o Evangelho a todos os povos. Por isso, estamos comprometidos com a evangelização do sertão de Alagoas.
-        </p>
+      <section class="section section-dark section-missions" id="missoes">
+        <div
+          class="missions-bg"
+          style="background-image: url(&quot;assets/missions-guitar.png&quot;)"
+        ></div>
+        <div class="missions-overlay"></div>
+        <div class="container missions-content">
+          <p class="section-badge-tracked">MISSÕES</p>
+          <h2 class="section-title text-light">
+            Uma igreja <span class="italic-accent">missionária</span>
+          </h2>
+          <p class="missions-lead">
+            A missão não é apenas uma atividade da igreja.
+            <span class="italic-accent"
+              >Ela faz parte da nossa identidade.</span
+            >
+          </p>
+          <p class="missions-body">
+            Entendemos a responsabilidade que Deus pôs sobre a Sua Igreja:
+            pregar o Evangelho a todos os povos. Por isso, estamos comprometidos
+            com a evangelização do sertão de Alagoas.
+          </p>
 
-        <div class="missions-buttons">
-          <a href="#missionarios" class="btn btn-primary">Conheça nossos missionários</a>
-          <a href="#contribua-instituto" class="btn btn-outline">Apoie a obra missionária</a>
-        </div>
-
-        <!-- 2 Side-by-side photos -->
-        <div class="missions-photos-pair">
-          <img src="assets/sertao-prayer.png" alt="Oração nos campos missionários" class="rounded-image shadow-md">
-          <img src="assets/sertao-team.png" alt="Equipe missionária da Comunidade da Cruz" class="rounded-image shadow-md">
-        </div>
-
-        <!-- Bible Verse Callout -->
-        <div class="bible-verse-box">
-          <p class="bible-verse-text">“Ide por todo o mundo e pregai o evangelho a toda criatura.”</p>
-          <span class="bible-verse-ref">MARCOS 16:15</span>
-        </div>
-
-        <!-- Sertão Alagoano Main Feature -->
-        <div class="sertao-feature-card">
-          <div class="sertao-image-holder">
-            <span class="badge-tag">FRENTE MISSIONÁRIA</span>
-            <img src="assets/sertao-main.png" alt="Frente missionária no Sertão Alagoano">
+          <div class="missions-buttons">
+            <a href="#missionarios" class="btn btn-primary"
+              >Conheça nossos missionários</a
+            >
+            <a href="#contribua-instituto" class="btn btn-outline"
+              >Apoie a obra missionária</a
+            >
           </div>
-          <div class="sertao-details">
-            <h3 class="sertao-title">Sertão <span class="italic-accent">alagoano</span></h3>
-            <p class="sertao-desc">
-              Evangelização das cidades e comunidades do sertão de Alagoas, levando o Evangelho a quem ainda não o conhece.
+
+          <!-- 2 Side-by-side photos -->
+          <div class="missions-photos-pair">
+            <img
+              src="assets/sertao-prayer.png"
+              alt="Oração nos campos missionários"
+              class="rounded-image shadow-md"
+            />
+            <img
+              src="assets/sertao-team.png"
+              alt="Equipe missionária da Comunidade da Cruz"
+              class="rounded-image shadow-md"
+            />
+          </div>
+
+          <!-- Bible Verse Callout -->
+          <div class="bible-verse-box">
+            <p class="bible-verse-text">
+              “Ide por todo o mundo e pregai o evangelho a toda criatura.”
             </p>
-            <div class="sertao-info-cols">
-              <div class="sertao-col">
-                <span class="col-overline">ONDE</span>
-                <p class="col-value">[Cidades atendidas]</p>
-              </div>
-              <div class="sertao-col">
-                <span class="col-overline">COMO ATUAMOS</span>
-                <p class="col-value">[Ex.: plantação de igrejas, discipulado]</p>
+            <span class="bible-verse-ref">MARCOS 16:15</span>
+          </div>
+
+          <!-- Sertão Alagoano Main Feature -->
+          <div class="sertao-feature-card">
+            <div class="sertao-image-holder">
+              <span class="badge-tag">FRENTE MISSIONÁRIA</span>
+              <img
+                src="assets/sertao-main.png"
+                alt="Frente missionária no Sertão Alagoano"
+              />
+            </div>
+            <div class="sertao-details">
+              <h3 class="sertao-title">
+                Sertão <span class="italic-accent">alagoano</span>
+              </h3>
+              <p class="sertao-desc">
+                Evangelização das cidades e comunidades do sertão de Alagoas,
+                levando o Evangelho a quem ainda não o conhece.
+              </p>
+              <div class="sertao-info-cols">
+                <div class="sertao-col">
+                  <span class="col-overline">ONDE</span>
+                  <p class="col-value">Monteirópolis</p>
+                </div>
+                <div class="sertao-col">
+                  <span class="col-overline">COMO ATUAMOS</span>
+                  <p class="col-value">
+                    Através do evangelismo, discipulado e plantação de igrejas
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          INSTITUTO MISSIO DEI
          ========================================================================== -->
-    <section class="section section-terracotta-rich section-missio-dei" id="missio-dei">
-      <div class="container">
-        <!-- Team Photo with Badge -->
-        <div class="missio-dei-hero-image">
-          <img src="assets/missio-dei-team.png" alt="Instituto Missio Dei" class="rounded-image shadow-md">
-          <div class="missio-dei-badge-circle">
-            <img src="assets/missio-dei-badge.png" alt="Selo Missio Dei">
-          </div>
-        </div>
-
-        <div class="missio-dei-text-block">
-          <p class="section-badge-tracked text-cream-light">UMA INICIATIVA DA COMUNIDADE DA CRUZ</p>
-          <h2 class="section-title text-light">
-            Instituto <span class="italic-accent text-cream">Missio Dei</span>
-          </h2>
-          <p class="lead-paragraph text-cream-subtle">
-            [Texto institucional sobre o Instituto Missio Dei — o que é, a quem se destina e como se relaciona com a missão da igreja. A ser fornecido pela equipe.]
-          </p>
-
-          <div class="missio-dei-boxes-grid">
-            <div class="missio-info-box">
-              <span class="box-overline">PARA QUEM</span>
-              <p class="box-value">[Público do Instituto]</p>
-            </div>
-            <div class="missio-info-box">
-              <span class="box-overline">COMO PARTICIPAR</span>
-              <p class="box-value">Ore • Participe • Invista</p>
+      <section
+        class="section section-terracotta-rich section-missio-dei"
+        id="missio-dei"
+      >
+        <div class="container">
+          <!-- Team Photo with Badge -->
+          <div class="missio-dei-hero-image">
+            <img
+              src="assets/missio-dei-team.png"
+              alt="Instituto Missio Dei"
+              class="rounded-image shadow-md"
+            />
+            <div class="missio-dei-badge-circle">
+              <img src="assets/missio-dei-badge.png" alt="Selo Missio Dei" />
             </div>
           </div>
 
-          <div class="missio-dei-action">
-            <a href="#contribua-instituto" class="btn btn-cream">Conheça o Instituto Missio Dei</a>
-          </div>
-        </div>
-
-        <!-- Contribua com o Instituto Banner -->
-        <div class="missio-dei-pix-banner" id="contribua-instituto">
-          <div class="pix-banner-left">
-            <p class="section-badge-tracked text-orange">CONTRIBUA COM O INSTITUTO</p>
-            <h3 class="pix-banner-title">
-              Apoie a formação <span class="italic-accent">missionária</span>
-            </h3>
-            <p class="pix-banner-desc">
-              Contribuição exclusiva para o Instituto Missio Dei, separada dos dízimos e ofertas da igreja.
+          <div class="missio-dei-text-block">
+            <p class="section-badge-tracked text-cream-light">
+              UMA INICIATIVA DA COMUNIDADE DA CRUZ
             </p>
-          </div>
+            <h2 class="section-title text-light">
+              Instituto <span class="italic-accent text-cream">Missio Dei</span>
+            </h2>
+            <p class="lead-paragraph text-cream-subtle">
+              Há oito anos, a Igreja Reformada Comunidade da Cruz nasceu em
+              Maceio - AL com um propósito claro: ser uma igreja missionária.
+              Mais do que ações pontuais, entendemos que fazemos parte da Missão
+              de Deus no mundo, essa é nossa identidade e propósito. Dessa
+              convicção, nasce o Missio Dei - Instituto Missionário: um braço da
+              nossa igreja sede. Criado com propósito de aprofundar e
+              materializar a identidade teológica e missionária da igreja. Em
+              plena concordância com valores e princípios da igreja Comunidade
+              da Cruz.
+            </p>
 
-          <div class="pix-banner-center">
-            <div class="qr-placeholder-box">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
-              </svg>
-              <span>QR Code<br>PIX</span>
-              <small>or browse files</small>
+            <div class="missio-dei-boxes-grid">
+              <div class="missio-info-box">
+                <span class="box-overline">PARA QUEM</span>
+                <p class="box-value">Toda a Igreja</p>
+              </div>
+              <div class="missio-info-box">
+                <span class="box-overline">COMO PARTICIPAR</span>
+                <p class="box-value">Ore • Participe • Invista</p>
+              </div>
+            </div>
+
+            <div class="missio-dei-action">
+              <a href="#contribua-instituto" class="btn btn-cream"
+                >Conheça o Instituto Missio Dei</a
+              >
             </div>
           </div>
 
-          <div class="pix-banner-right">
-            <span class="pix-label">CHAVE PIX DO INSTITUTO</span>
-            <p class="pix-key-text" id="missioPixKey">[CHAVE PIX DO INSTITUTO]</p>
-            <button class="btn btn-outline-light btn-copy" data-clipboard="[CHAVE PIX DO INSTITUTO]">Copiar</button>
-            <p class="pix-beneficiary">Favorecido: [Nome / CNPJ do Instituto]</p>
+          <!-- Contribua com o Instituto Banner -->
+          <div class="missio-dei-pix-banner" id="contribua-instituto">
+            <div class="pix-banner-left">
+              <p class="section-badge-tracked text-orange">
+                CONTRIBUA COM O INSTITUTO
+              </p>
+              <h3 class="pix-banner-title">
+                Apoie a formação <span class="italic-accent">missionária</span>
+              </h3>
+              <p class="pix-banner-desc">
+                Contribuição exclusiva para o Instituto Missio Dei, separada dos
+                dízimos e ofertas da igreja.
+              </p>
+            </div>
+
+            <div class="pix-banner-center">
+              <div class="qr-placeholder-box qr-code-box">
+                <img
+                  src="assets/qr-pix-missio-dei.png"
+                  alt="QR Code PIX para contribuir com o Instituto Missio Dei"
+                  class="qr-code-img"
+                />
+              </div>
+            </div>
+
+            <div class="pix-banner-right">
+              <span class="pix-label">CHAVE PIX DO INSTITUTO</span>
+              <p class="pix-key-text" id="missioPixKey">
+                missoes@comunidadedacruz.org.br
+              </p>
+              <button
+                class="btn btn-outline-light btn-copy"
+                data-clipboard="missoes@comunidadedacruz.org.br"
+              >
+                Copiar
+              </button>
+              <p class="pix-beneficiary">
+                Favorecido: Instituto Missio Dei
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          NOSSOS MISSIONÁRIOS
          ========================================================================== -->
-    <section class="section section-cream section-missionaries" id="missionarios">
-      <div class="container">
-        <p class="section-badge-tracked">NOSSOS MISSIONÁRIOS</p>
-        <h2 class="section-title text-dark">
-          Enviados e <span class="italic-accent">sustentados</span> pela igreja
-        </h2>
+      <section
+        class="section section-cream section-missionaries"
+        id="missionarios"
+      >
+        <div class="container">
+          <p class="section-badge-tracked">NOSSOS MISSIONÁRIOS</p>
+          <h2 class="section-title text-dark">
+            Enviados e <span class="italic-accent">sustentados</span> pela
+            igreja
+          </h2>
 
-        <div class="missionaries-grid">
-          <!-- Missionary Card 1 -->
-          <div class="missionary-card">
-            <div class="missionary-photo-placeholder">
-              <svg class="placeholder-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
-              <span class="placeholder-text">Foto do missionário</span>
-              <span class="placeholder-sub">or browse files</span>
-            </div>
-            <div class="missionary-card-body">
-              <span class="missionary-field-tag">CAMPO MISSIONÁRIO</span>
-              <h3 class="missionary-name">Nome do missionário</h3>
-              <p class="missionary-desc">Breve descrição do trabalho realizado no campo.</p>
-              <button class="btn btn-outline-dark btn-sm">Conheça sua história</button>
-            </div>
-          </div>
-
-          <!-- Missionary Card 2 -->
-          <div class="missionary-card">
-            <div class="missionary-photo-placeholder">
-              <svg class="placeholder-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
-              <span class="placeholder-text">Foto do missionário</span>
-              <span class="placeholder-sub">or browse files</span>
-            </div>
-            <div class="missionary-card-body">
-              <span class="missionary-field-tag">CAMPO MISSIONÁRIO</span>
-              <h3 class="missionary-name">Nome do missionário</h3>
-              <p class="missionary-desc">Breve descrição do trabalho realizado no campo.</p>
-              <button class="btn btn-outline-dark btn-sm">Conheça sua história</button>
-            </div>
-          </div>
-
-          <!-- Missionary Card 3 -->
-          <div class="missionary-card">
-            <div class="missionary-photo-placeholder">
-              <svg class="placeholder-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
-              <span class="placeholder-text">Foto do missionário</span>
-              <span class="placeholder-sub">or browse files</span>
-            </div>
-            <div class="missionary-card-body">
-              <span class="missionary-field-tag">CAMPO MISSIONÁRIO</span>
-              <h3 class="missionary-name">Nome do missionário</h3>
-              <p class="missionary-desc">Breve descrição do trabalho realizado no campo.</p>
-              <button class="btn btn-outline-dark btn-sm">Conheça sua história</button>
-            </div>
-          </div>
-        </div>
-
-        <p class="missionaries-footer-note">
-          Missionários atualmente apoiados pela Comunidade da Cruz. <strong>Ore por eles.</strong>
-        </p>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         NOSSA FÉ / CONFISSÃO
-         ========================================================================== -->
-    <section class="section section-cream-soft section-faith" id="nossa-fe">
-      <div class="container text-center">
-        <!-- Shield icon -->
-        <div class="faith-shield-icon">
-          <svg width="40" height="46" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 0L4 6V20C4 32.5 20 45 20 45C20 45 36 32.5 36 20V6L20 0Z" fill="#25201C"/>
-            <path d="M18 11H22V17H28V21H22V33H18V21H12V17H18V11Z" fill="#FFF7F1"/>
-          </svg>
-        </div>
-
-        <p class="section-badge-tracked">NOSSA FÉ</p>
-        <h2 class="section-title text-dark">
-          No que <span class="italic-accent">cremos</span>
-        </h2>
-
-        <div class="faith-text-body">
-          <p>
-            Cremos em um único Deus santo, vivo e verdadeiro, que subsiste na forma de três pessoas — Pai, Filho e Espírito Santo —, criador dos céus, da terra e de todos os seres que neles habitam. Temos consciência do nosso estado de rebelião contra Deus, que nos foi revelado pelas Escrituras, sendo nós passíveis de morte como recompensa pelo nosso pecado.
-          </p>
-          <p>
-            Cremos que Deus enviou Seu único Filho Jesus Cristo, o qual viveu entre nós uma vida santa, sem pecado, foi crucificado e morto em nosso lugar, ressuscitou ao terceiro dia e pagou a dívida que era nossa. Ele satisfez a ira de Deus, nos concedeu Seu perdão eterno e restaurou a nossa comunhão com Deus, aplicando fé em nossos corações para a salvação eterna.
-          </p>
-          <p class="faith-doxology">
-            A Ele, pois, seja a glória para sempre, amém!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         LIDERANÇA
-         ========================================================================== -->
-    <section class="section section-cream section-leadership" id="lideranca">
-      <div class="container">
-        <div class="leadership-layout">
-          <!-- Left side photo -->
-          <div class="leadership-photo-col">
-            <img src="assets/leadership-pastors.png" alt="Liderança da Comunidade da Cruz" class="rounded-image shadow-md">
-          </div>
-
-          <!-- Right side details -->
-          <div class="leadership-details-col">
-            <p class="section-badge-tracked">LIDERANÇA</p>
-            <h2 class="section-title text-dark">
-              Quem cuida da <span class="italic-accent">nossa igreja</span>
-            </h2>
-            <p class="leadership-text">
-              Somos liderados pelo Pastor Júnior Gouveia e Pastor Wilson Douglas, com o auxílio de diáconos e presbíteros reconhecidos pela igreja e de uma diretoria estabelecida pela mesma. Também temos irmãos que exercem liderança em ministérios de suporte à igreja.
-            </p>
-
-            <div class="directoria-block">
-              <span class="directoria-label">DIRETORIA</span>
-              <ul class="directoria-list">
-                <li>Pr. Júnior Gouveia</li>
-                <li>Pr. Wilson Douglas</li>
-                <li>Diác. Mizael Ricardo</li>
-                <li>Diác. Rogério</li>
-                <li>Gilberto Pereira</li>
-                <li>Wilkerson Gouveia</li>
-                <li>José Zacarias</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         COMO SE ENVOLVER
-         ========================================================================== -->
-    <section class="section section-dark section-involve" id="como-se-envolver">
-      <div class="container">
-        <p class="section-badge-tracked">COMO SE ENVOLVER</p>
-        <h2 class="section-title text-light">
-          Faça parte <span class="italic-accent">da família</span>
-        </h2>
-
-        <div class="involve-action">
-          <a href="#visite-nos" class="btn btn-primary btn-lg">Quero participar da Classe Novos Membros</a>
-        </div>
-
-        <div class="involve-text-body">
-          <p>
-            Cremos que cada cristão foi chamado para um compromisso pessoal com Cristo, e que esse compromisso deve ser vivido corporativamente no contexto de igreja local — Cristo chama Seu povo de igreja, e chama Sua igreja de corpo.
-          </p>
-          <p>
-            Somente frequentar a Comunidade da Cruz não o torna membro: é necessário assumir uma responsabilidade regular, se envolvendo na vida uns dos outros com compromisso em amor pelo propósito do Evangelho. Caso deseje, entre em contato para ser direcionado à Classe Novos Membros.
-          </p>
-          <p class="pastoral-signature">
-            Em Cristo, Pr. Júnior Gouveia.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         EVENTOS
-         ========================================================================== -->
-    <section class="section section-cream section-events" id="eventos">
-      <div class="container">
-        <p class="section-badge-tracked">EVENTOS</p>
-        <h2 class="section-title text-dark">
-          Próximos <span class="italic-accent">eventos</span>
-        </h2>
-
-        <div class="events-grid">
-          <!-- Event Card 1 (Congresso Missio Dei) -->
-          <div class="event-card">
-            <div class="event-card-media">
-              <span class="event-date-badge">
-                <span class="badge-dd">DD</span>
-                <span class="badge-mm">MÊS</span>
-              </span>
-              <img src="assets/event-congresso.png" alt="III Congresso Missio Dei">
-            </div>
-            <div class="event-card-body">
-              <span class="event-type-label">TIPO DO EVENTO</span>
-              <h3 class="event-name">Nome do evento</h3>
-              <p class="event-datetime">DD/MM/AAAA · 00h00</p>
-              <p class="event-desc">Breve descrição do evento.</p>
-              <button class="btn btn-dark-pill btn-sm">Saiba mais</button>
-            </div>
-          </div>
-
-          <!-- Event Card 2 (Placeholder Arte / Foto) -->
-          <div class="event-card">
-            <div class="event-card-media event-media-placeholder">
-              <span class="event-date-badge">
-                <span class="badge-dd">DD</span>
-                <span class="badge-mm">MÊS</span>
-              </span>
-              <div class="placeholder-inner">
-                <svg class="placeholder-icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <div class="missionaries-grid">
+            <!-- Missionary Card 1 -->
+            <div class="missionary-card">
+              <div class="missionary-photo-placeholder">
+                <svg
+                  class="placeholder-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                >
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="placeholder-text">Arte / foto do evento</span>
+                <span class="placeholder-text">Foto do missionário</span>
                 <span class="placeholder-sub">or browse files</span>
               </div>
+              <div class="missionary-card-body">
+                <span class="missionary-field-tag">CAMPO MISSIONÁRIO</span>
+                <h3 class="missionary-name">Nome do missionário</h3>
+                <p class="missionary-desc">
+                  Breve descrição do trabalho realizado no campo.
+                </p>
+                <button class="btn btn-outline-dark btn-sm">
+                  Conheça sua história
+                </button>
+              </div>
             </div>
-            <div class="event-card-body">
-              <span class="event-type-label">TIPO DO EVENTO</span>
-              <h3 class="event-name">Nome do evento</h3>
-              <p class="event-datetime">DD/MM/AAAA · 00h00</p>
-              <p class="event-desc">Breve descrição do evento.</p>
-              <button class="btn btn-dark-pill btn-sm">Saiba mais</button>
+
+            <!-- Missionary Card 2 -->
+            <div class="missionary-card">
+              <div class="missionary-photo-placeholder">
+                <svg
+                  class="placeholder-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span class="placeholder-text">Foto do missionário</span>
+                <span class="placeholder-sub">or browse files</span>
+              </div>
+              <div class="missionary-card-body">
+                <span class="missionary-field-tag">CAMPO MISSIONÁRIO</span>
+                <h3 class="missionary-name">Nome do missionário</h3>
+                <p class="missionary-desc">
+                  Breve descrição do trabalho realizado no campo.
+                </p>
+                <button class="btn btn-outline-dark btn-sm">
+                  Conheça sua história
+                </button>
+              </div>
+            </div>
+
+            <!-- Missionary Card 3 -->
+            <div class="missionary-card">
+              <div class="missionary-photo-placeholder">
+                <svg
+                  class="placeholder-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span class="placeholder-text">Foto do missionário</span>
+                <span class="placeholder-sub">or browse files</span>
+              </div>
+              <div class="missionary-card-body">
+                <span class="missionary-field-tag">CAMPO MISSIONÁRIO</span>
+                <h3 class="missionary-name">Nome do missionário</h3>
+                <p class="missionary-desc">
+                  Breve descrição do trabalho realizado no campo.
+                </p>
+                <button class="btn btn-outline-dark btn-sm">
+                  Conheça sua história
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Event Card 3 (Culto do...) -->
-          <div class="event-card">
-            <div class="event-card-media">
-              <span class="event-date-badge">
-                <span class="badge-dd">DD</span>
-                <span class="badge-mm">MÊS</span>
-              </span>
-              <img src="assets/event-culto.png" alt="Culto Especial">
+          <p class="missionaries-footer-note">
+            Missionários atualmente apoiados pela Comunidade da Cruz.
+            <strong>Ore por eles.</strong>
+          </p>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+         NOSSA FÉ / CONFISSÃO
+         ========================================================================== -->
+      <section class="section section-cream-soft section-faith" id="nossa-fe">
+        <div class="container text-center">
+          <!-- Shield icon -->
+          <div class="faith-shield-icon">
+            <img
+              src="assets/logo-shield-dark.png"
+              alt="Símbolo da Igreja Reformada Comunidade da Cruz"
+              width="40"
+              height="56"
+            />
+          </div>
+
+          <p class="section-badge-tracked">NOSSA FÉ</p>
+          <h2 class="section-title text-dark">
+            No que <span class="italic-accent">cremos</span>
+          </h2>
+
+          <div class="faith-text-body">
+            <p>
+              Cremos em um único Deus santo, vivo e verdadeiro, que subsiste na
+              forma de três pessoas — Pai, Filho e Espírito Santo —, criador dos
+              céus, da terra e de todos os seres que neles habitam. Temos
+              consciência do nosso estado de rebelião contra Deus, que nos foi
+              revelado pelas Escrituras, sendo nós passíveis de morte como
+              recompensa pelo nosso pecado.
+            </p>
+            <p>
+              Cremos que Deus enviou Seu único Filho Jesus Cristo, o qual viveu
+              entre nós uma vida santa, sem pecado, foi crucificado e morto em
+              nosso lugar, ressuscitou ao terceiro dia e pagou a dívida que era
+              nossa. Ele satisfez a ira de Deus, nos concedeu Seu perdão eterno
+              e restaurou a nossa comunhão com Deus, aplicando fé em nossos
+              corações para a salvação eterna.
+            </p>
+            <p class="faith-doxology">
+              A Ele, pois, seja a glória para sempre, amém!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+         LIDERANÇA
+         ========================================================================== -->
+      <section class="section section-cream section-leadership" id="lideranca">
+        <div class="container">
+          <div class="leadership-layout">
+            <!-- Left side photo -->
+            <div class="leadership-photo-col">
+              <img
+                src="assets/leadership-pastors.png"
+                alt="Liderança da Comunidade da Cruz"
+                class="rounded-image shadow-md"
+              />
             </div>
-            <div class="event-card-body">
-              <span class="event-type-label">TIPO DO EVENTO</span>
-              <h3 class="event-name">Nome do evento</h3>
-              <p class="event-datetime">DD/MM/AAAA · 00h00</p>
-              <p class="event-desc">Breve descrição do evento.</p>
-              <button class="btn btn-dark-pill btn-sm">Saiba mais</button>
+
+            <!-- Right side details -->
+            <div class="leadership-details-col">
+              <p class="section-badge-tracked">LIDERANÇA</p>
+              <h2 class="section-title text-dark">
+                Quem cuida da <span class="italic-accent">nossa igreja</span>
+              </h2>
+              <p class="leadership-text">
+                Somos liderados pelo Pastor Júnior Gouveia e Pastor Wilson
+                Douglas, com o auxílio de diáconos e presbíteros reconhecidos
+                pela igreja e de uma diretoria estabelecida pela mesma. Também
+                temos irmãos que exercem liderança em ministérios de suporte à
+                igreja.
+              </p>
+
+              <div class="directoria-block">
+                <span class="directoria-label">DIRETORIA</span>
+                <ul class="directoria-list">
+                  <li>Pr. Júnior Gouveia</li>
+                  <li>Pr. Wilson Douglas</li>
+                  <li>Diác. Mizael Ricardo</li>
+                  <li>Diác. Rogério</li>
+                  <li>Gilberto Pereira</li>
+                  <li>Wilkerson Gouveia</li>
+                  <li>José Zacarias</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
+         COMO SE ENVOLVER
+         ========================================================================== -->
+      <section
+        class="section section-dark section-involve"
+        id="como-se-envolver"
+      >
+        <div class="container">
+          <p class="section-badge-tracked">COMO SE ENVOLVER</p>
+          <h2 class="section-title text-light">
+            Faça parte <span class="italic-accent">da família</span>
+          </h2>
+
+          <div class="involve-action">
+            <a href="#visite-nos" class="btn btn-primary btn-lg"
+              >Quero participar da Classe Novos Membros</a
+            >
+          </div>
+
+          <div class="involve-text-body">
+            <p>
+              Cremos que cada cristão foi chamado para um compromisso pessoal
+              com Cristo, e que esse compromisso deve ser vivido
+              corporativamente no contexto de igreja local — Cristo chama Seu
+              povo de igreja, e chama Sua igreja de corpo.
+            </p>
+            <p>
+              Somente frequentar a Comunidade da Cruz não o torna membro: é
+              necessário assumir uma responsabilidade regular, se envolvendo na
+              vida uns dos outros com compromisso em amor pelo propósito do
+              Evangelho. Caso deseje, entre em contato para ser direcionado à
+              Classe Novos Membros.
+            </p>
+            <p class="pastoral-signature">Em Cristo, Pr. Júnior Gouveia.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+         EVENTOS
+         ========================================================================== -->
+      <section class="section section-cream section-events" id="eventos">
+        <div class="container">
+          <p class="section-badge-tracked">EVENTOS</p>
+          <h2 class="section-title text-dark">
+            Próximos <span class="italic-accent">eventos</span>
+          </h2>
+
+          <div class="events-grid">
+            <!-- Event Card 1 (Congresso Missio Dei) -->
+            <div class="event-card">
+              <div class="event-card-media">
+                <span class="event-date-badge">
+                  <span class="badge-dd">DD</span>
+                  <span class="badge-mm">MÊS</span>
+                </span>
+                <img
+                  src="assets/event-congresso.png"
+                  alt="III Congresso Missio Dei"
+                />
+              </div>
+              <div class="event-card-body">
+                <span class="event-type-label">TIPO DO EVENTO</span>
+                <h3 class="event-name">Nome do evento</h3>
+                <p class="event-datetime">DD/MM/AAAA · 00h00</p>
+                <p class="event-desc">Breve descrição do evento.</p>
+                <button class="btn btn-dark-pill btn-sm">Saiba mais</button>
+              </div>
+            </div>
+
+            <!-- Event Card 2 (Placeholder Arte / Foto) -->
+            <div class="event-card">
+              <div class="event-card-media event-media-placeholder">
+                <span class="event-date-badge">
+                  <span class="badge-dd">DD</span>
+                  <span class="badge-mm">MÊS</span>
+                </span>
+                <div class="placeholder-inner">
+                  <svg
+                    class="placeholder-icon"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  >
+                    <rect
+                      x="3"
+                      y="3"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <span class="placeholder-text">Arte / foto do evento</span>
+                  <span class="placeholder-sub">or browse files</span>
+                </div>
+              </div>
+              <div class="event-card-body">
+                <span class="event-type-label">TIPO DO EVENTO</span>
+                <h3 class="event-name">Nome do evento</h3>
+                <p class="event-datetime">DD/MM/AAAA · 00h00</p>
+                <p class="event-desc">Breve descrição do evento.</p>
+                <button class="btn btn-dark-pill btn-sm">Saiba mais</button>
+              </div>
+            </div>
+
+            <!-- Event Card 3 (Culto do...) -->
+            <div class="event-card">
+              <div class="event-card-media">
+                <span class="event-date-badge">
+                  <span class="badge-dd">DD</span>
+                  <span class="badge-mm">MÊS</span>
+                </span>
+                <img src="assets/event-culto.png" alt="Culto Especial" />
+              </div>
+              <div class="event-card-body">
+                <span class="event-type-label">TIPO DO EVENTO</span>
+                <h3 class="event-name">Nome do evento</h3>
+                <p class="event-datetime">DD/MM/AAAA · 00h00</p>
+                <p class="event-desc">Breve descrição do evento.</p>
+                <button class="btn btn-dark-pill btn-sm">Saiba mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
          MÍDIA
          ========================================================================== -->
-    <section class="section section-dark section-media" id="midia">
-      <div class="container">
-        <div class="media-header">
-          <div>
-            <p class="section-badge-tracked">MÍDIA</p>
-            <h2 class="section-title text-light">
-              Acompanhe <span class="italic-accent">de onde estiver</span>
-            </h2>
+      <section class="section section-dark section-media" id="midia">
+        <div class="container">
+          <div class="media-header">
+            <div>
+              <p class="section-badge-tracked">MÍDIA</p>
+              <h2 class="section-title text-light">
+                Acompanhe <span class="italic-accent">de onde estiver</span>
+              </h2>
+            </div>
+            <a
+              href="https://www.youtube.com/channel/UCT3eombon8scBx3l4EbDI4w"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-youtube-channel"
+            >
+              Ver canal no YouTube →
+            </a>
           </div>
-          <a href="https://youtube.com/@IgrejaReformadaComunidadeDaCruz" target="_blank" rel="noopener noreferrer" class="link-youtube-channel">
-            Ver canal no YouTube →
-          </a>
+
+          <!-- YouTube Video Embed / Player Box -->
+          <div
+            class="media-video-player"
+            id="videoBox"
+            role="button"
+            aria-label="Reproduzir vídeo da Comunidade da Cruz"
+          >
+            <div class="play-button-circle">
+              <svg width="24" height="28" viewBox="0 0 24 28" fill="none">
+                <polygon points="5 3, 21 14, 5 25" fill="#25201C" />
+              </svg>
+            </div>
+            <p class="video-caption">
+              [ Embed do YouTube — último culto / transmissão ao vivo ]
+            </p>
+          </div>
+
+          <!-- Social Media 3 Cards Grid -->
+          <div class="social-channels-grid">
+            <div class="social-card">
+              <span class="social-card-tag">INSTAGRAM</span>
+              <p class="social-card-handle">@igrejacomunidadedacruz</p>
+              <a
+                href="https://instagram.com/igrejacomunidadedacruz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-action-link"
+                >Seguir →</a
+              >
+            </div>
+
+            <div class="social-card">
+              <span class="social-card-tag">YOUTUBE</span>
+              <p class="social-card-handle">/IgrejaReformadaComunidadeDaCruz</p>
+              <a
+                href="https://youtube.com/@IgrejaReformadaComunidadeDaCruz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-action-link"
+                >Inscrever-se →</a
+              >
+            </div>
+
+            <div class="social-card">
+              <span class="social-card-tag">FACEBOOK</span>
+              <p class="social-card-handle">/IgrejaComunidadeDaCruz</p>
+              <a
+                href="https://web.facebook.com/IgrejaReformadaComunidadeDaCruz?_rdc=1&_rdr#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-action-link"
+                >Curtir página →</a
+              >
+            </div>
+          </div>
+
+          <!-- Instagram Gallery 6 Images Grid -->
+          <div class="instagram-gallery-grid">
+            <div class="gallery-item">
+              <img src="assets/social-1.png" alt="Comunidade da Cruz Foto 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/social-2.png" alt="Comunidade da Cruz Foto 2" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/social-3.png" alt="Comunidade da Cruz Foto 3" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/social-4.png" alt="Comunidade da Cruz Foto 4" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/social-5.png" alt="Comunidade da Cruz Foto 5" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/social-6.png" alt="Comunidade da Cruz Foto 6" />
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- YouTube Video Embed / Player Box -->
-        <div class="media-video-player" id="videoBox" role="button" aria-label="Reproduzir vídeo da Comunidade da Cruz">
-          <div class="play-button-circle">
-            <svg width="24" height="28" viewBox="0 0 24 28" fill="none">
-              <polygon points="5 3, 21 14, 5 25" fill="#25201C"/>
-            </svg>
-          </div>
-          <p class="video-caption">[ Embed do YouTube — último culto / transmissão ao vivo ]</p>
-        </div>
-
-        <!-- Social Media 3 Cards Grid -->
-        <div class="social-channels-grid">
-          <div class="social-card">
-            <span class="social-card-tag">INSTAGRAM</span>
-            <p class="social-card-handle">@igrejacomunidadedacruz</p>
-            <a href="https://instagram.com/igrejacomunidadedacruz" target="_blank" rel="noopener noreferrer" class="social-action-link">Seguir →</a>
-          </div>
-
-          <div class="social-card">
-            <span class="social-card-tag">YOUTUBE</span>
-            <p class="social-card-handle">/IgrejaReformadaComunidadeDaCruz</p>
-            <a href="https://youtube.com/@IgrejaReformadaComunidadeDaCruz" target="_blank" rel="noopener noreferrer" class="social-action-link">Inscrever-se →</a>
-          </div>
-
-          <div class="social-card">
-            <span class="social-card-tag">FACEBOOK</span>
-            <p class="social-card-handle">/IgrejaComunidadeDaCruz</p>
-            <a href="https://facebook.com/IgrejaComunidadeDaCruz" target="_blank" rel="noopener noreferrer" class="social-action-link">Curtir página →</a>
-          </div>
-        </div>
-
-        <!-- Instagram Gallery 6 Images Grid -->
-        <div class="instagram-gallery-grid">
-          <div class="gallery-item"><img src="assets/social-1.png" alt="Comunidade da Cruz Foto 1"></div>
-          <div class="gallery-item"><img src="assets/social-2.png" alt="Comunidade da Cruz Foto 2"></div>
-          <div class="gallery-item"><img src="assets/social-3.png" alt="Comunidade da Cruz Foto 3"></div>
-          <div class="gallery-item"><img src="assets/social-4.png" alt="Comunidade da Cruz Foto 4"></div>
-          <div class="gallery-item"><img src="assets/social-5.png" alt="Comunidade da Cruz Foto 5"></div>
-          <div class="gallery-item"><img src="assets/social-6.png" alt="Comunidade da Cruz Foto 6"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          CONTRIBUA
          ========================================================================== -->
-    <section class="section section-cream section-contribute" id="contribua">
-      <div class="container">
-        <p class="section-badge-tracked">CONTRIBUA</p>
-        <h2 class="section-title text-dark">
-          Dízimos e <span class="italic-accent">ofertas</span>
-        </h2>
-        <p class="lead-paragraph text-muted">
-          [Texto sobre dízimos e ofertas — a ser fornecido pela liderança.]
-        </p>
+      <section class="section section-cream section-contribute" id="contribua">
+        <div class="container">
+          <p class="section-badge-tracked">CONTRIBUA</p>
+          <h2 class="section-title text-dark">
+            Dízimos e <span class="italic-accent">ofertas</span>
+          </h2>
+          <p
+            class="lead-paragraph text-muted italic-accent"
+            style="font-size: 24px"
+          >
+            2 Coríntios 9:7-8
+          </p>
 
-        <!-- Contribution Card -->
-        <div class="contribute-card">
-          <!-- Row 1: Pix -->
-          <div class="contribute-row pix-row">
-            <div>
-              <span class="contribute-label">CHAVE PIX</span>
-              <p class="contribute-key-text" id="churchPixKey">[CHAVE PIX]</p>
+          <!-- Contribution Card -->
+          <div class="contribute-card">
+            <!-- Row 1: Pix -->
+            <div class="contribute-row pix-row">
+              <div>
+                <span class="contribute-label">CHAVE PIX</span>
+                <p class="contribute-key-text" id="churchPixKey">
+                  28.514.667/0001-21
+                </p>
+              </div>
+              <button
+                class="btn btn-outline-dark btn-copy"
+                data-clipboard="28514667000121"
+              >
+                Copiar
+              </button>
             </div>
-            <button class="btn btn-outline-dark btn-copy" data-clipboard="[CHAVE PIX]">Copiar</button>
-          </div>
 
-          <div class="contribute-divider"></div>
+            <div class="contribute-divider"></div>
 
-          <!-- Row 2: Bank Details -->
-          <div class="contribute-row bank-row">
-            <div>
-              <span class="contribute-label">DADOS BANCÁRIOS</span>
-              <p class="bank-details-line">[Banco] · [Agência] · [Conta]</p>
-              <p class="bank-details-line">[Razão social] · CNPJ [00.000.000/0000-00]</p>
+            <!-- Row 2: Bank Details -->
+            <div class="contribute-row bank-row">
+              <div>
+                <span class="contribute-label">DADOS BANCÁRIOS</span>
+                <p class="bank-details-line">
+                  Banco do Brasil · Conta Corrente 30014-4
+                </p>
+                <p class="bank-details-line">
+                  Agência 4287-0 · CNPJ 28.514.667/0001-21
+                </p>
+              </div>
             </div>
-          </div>
 
-          <!-- Row 3: Online Link Button -->
-          <div class="contribute-online-action">
+            <!-- Row 3: Online Link Button -->
+            <!-- <div class="contribute-online-action">
             <a href="#contribua" class="btn btn-muted-pill">Contribuir online — [link, se houver]</a>
+          </div> -->
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          VISITE-NOS / CARTÃO DE VISITANTE
          ========================================================================== -->
-    <section class="section section-cream-soft section-visit" id="visite-nos">
-      <div class="container">
-        <p class="section-badge-tracked">VISITE-NOS</p>
-        <h2 class="section-title text-dark">
-          Queremos estar <span class="italic-accent">mais próximos de você</span>
-        </h2>
+      <section class="section section-cream-soft section-visit" id="visite-nos">
+        <div class="container">
+          <p class="section-badge-tracked">VISITE-NOS</p>
+          <h2 class="section-title text-dark">
+            Queremos estar
+            <span class="italic-accent">mais próximos de você</span>
+          </h2>
 
-        <!-- Map Banner / Interactive Map -->
-        <div class="map-banner-container">
-          <iframe 
-            src="https://maps.google.com/maps?q=Av.+Presidente+Get%C3%BAlio+Vargas,+Serraria,+Macei%C3%B3+-+AL&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-            title="Localização Igreja Reformada Comunidade da Cruz"
-            class="map-iframe"
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-
-        <!-- Address and Secretariat Info -->
-        <div class="contact-columns-grid">
-          <div class="contact-info-col">
-            <span class="info-label">ENDEREÇO</span>
-            <p class="info-text">Av. Presidente Getúlio Vargas, S/N – Serraria</p>
-            <p class="info-text">Maceió – AL · CEP 57046-521</p>
-            <a href="https://maps.google.com/?q=Av.+Presidente+Getúlio+Vargas,+Serraria,+Maceió+-+AL" target="_blank" rel="noopener noreferrer" class="contact-action-link">Como chegar →</a>
+          <!-- Map Banner / Interactive Map -->
+          <div class="map-banner-container">
+            <iframe
+              src="https://maps.google.com/maps?q=Av.+Presidente+Get%C3%BAlio+Vargas,+Serraria,+Macei%C3%B3+-+AL&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              title="Localização Igreja Reformada Comunidade da Cruz"
+              class="map-iframe"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
           </div>
 
-          <div class="contact-info-col">
-            <span class="info-label">SECRETARIA</span>
-            <p class="info-text phone-highlight">(82) 99629-8697</p>
-            <a href="https://wa.me/5582996298697" target="_blank" rel="noopener noreferrer" class="contact-action-link">Chamar no WhatsApp →</a>
+          <!-- Address and Secretariat Info -->
+          <div class="contact-columns-grid">
+            <div class="contact-info-col">
+              <span class="info-label">ENDEREÇO</span>
+              <p class="info-text">
+                Av. Presidente Getúlio Vargas, S/N – Serraria
+              </p>
+              <p class="info-text">Maceió – AL · CEP 57046-521</p>
+              <a
+                href="https://maps.google.com/?q=Av.+Presidente+Getúlio+Vargas,+Serraria,+Maceió+-+AL"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-action-link"
+                >Como chegar →</a
+              >
+            </div>
+
+            <div class="contact-info-col">
+              <span class="info-label">SECRETARIA</span>
+              <p class="info-text phone-highlight">(82) 99629-8697</p>
+              <a
+                href="https://wa.me/5582996298697"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-action-link"
+                >Chamar no WhatsApp →</a
+              >
+            </div>
+          </div>
+
+          <!-- Visitor Card (Form) -->
+          <div class="visitor-card-form-box">
+            <h3 class="visitor-form-title">Cartão de visitante</h3>
+            <p class="visitor-form-subtitle">
+              Deixe seus dados e nossa equipe entrará em contato.
+            </p>
+
+            <form id="visitorForm" novalidate>
+              <!-- Name -->
+              <div class="form-group">
+                <label for="visitorName" class="form-label">NOME</label>
+                <input
+                  type="text"
+                  id="visitorName"
+                  name="name"
+                  class="form-input"
+                  placeholder="Seu nome"
+                  required
+                />
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="visitorPhone" class="form-label">TELEFONE</label>
+                <input
+                  type="tel"
+                  id="visitorPhone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="(82) 90000-0000"
+                  required
+                />
+              </div>
+
+              <!-- How did you hear about the church -->
+              <div class="form-group">
+                <label for="visitorSource" class="form-label"
+                  >COMO CONHECEU A IGREJA?</label
+                >
+                <div class="select-wrapper">
+                  <select
+                    id="visitorSource"
+                    name="source"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="Indicação de Amigo ou Familiar">
+                      Indicação de amigo ou familiar
+                    </option>
+                    <option value="Passando em frente / Bairro Serraria">
+                      Passando em frente / Bairro
+                    </option>
+                    <option value="Outro canal">Outro</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Already Christian Evangelical Toggle -->
+              <div class="form-group">
+                <span class="form-label">JÁ É CRISTÃO EVANGÉLICO?</span>
+                <div class="radio-pill-group">
+                  <label class="radio-pill-btn active">
+                    <input
+                      type="radio"
+                      name="is_christian"
+                      value="Sim"
+                      checked
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="radio-pill-btn">
+                    <input type="radio" name="is_christian" value="Não" />
+                    <span>Não</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="btn btn-primary btn-block btn-submit"
+                id="submitVisitorBtn"
+              >
+                Enviar pelo WhatsApp
+              </button>
+            </form>
           </div>
         </div>
+      </section>
+    </main>
 
-        <!-- Visitor Card (Form) -->
-        <div class="visitor-card-form-box">
-          <h3 class="visitor-form-title">Cartão de visitante</h3>
-          <p class="visitor-form-subtitle">Deixe seus dados e nossa equipe entrará em contato.</p>
-
-          <form id="visitorForm" novalidate>
-            <!-- Name -->
-            <div class="form-group">
-              <label for="visitorName" class="form-label">NOME</label>
-              <input type="text" id="visitorName" name="name" class="form-input" placeholder="Seu nome" required>
-            </div>
-
-            <!-- Phone -->
-            <div class="form-group">
-              <label for="visitorPhone" class="form-label">TELEFONE</label>
-              <input type="tel" id="visitorPhone" name="phone" class="form-input" placeholder="(82) 90000-0000" required>
-            </div>
-
-            <!-- How did you hear about the church -->
-            <div class="form-group">
-              <label for="visitorSource" class="form-label">COMO CONHECEU A IGREJA?</label>
-              <div class="select-wrapper">
-                <select id="visitorSource" name="source" class="form-select" required>
-                  <option value="" disabled selected>Selecione</option>
-                  <option value="Instagram">Instagram</option>
-                  <option value="YouTube">YouTube</option>
-                  <option value="Indicação de Amigo ou Familiar">Indicação de amigo ou familiar</option>
-                  <option value="Passando em frente / Bairro Serraria">Passando em frente / Bairro</option>
-                  <option value="Outro canal">Outro</option>
-                </select>
-              </div>
-            </div>
-
-            <!-- Already Christian Evangelical Toggle -->
-            <div class="form-group">
-              <span class="form-label">JÁ É CRISTÃO EVANGÉLICO?</span>
-              <div class="radio-pill-group">
-                <label class="radio-pill-btn active">
-                  <input type="radio" name="is_christian" value="Sim" checked>
-                  <span>Sim</span>
-                </label>
-                <label class="radio-pill-btn">
-                  <input type="radio" name="is_christian" value="Não">
-                  <span>Não</span>
-                </label>
-              </div>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary btn-block btn-submit" id="submitVisitorBtn">
-              Enviar pelo WhatsApp
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        FOOTER
        ========================================================================== -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-grid">
-        <!-- Col 1: Brand -->
-        <div class="footer-col brand-col">
-          <img src="assets/logo-footer.png" alt="Igreja Reformada Comunidade da Cruz" class="footer-logo">
-          <p class="footer-brand-name">Igreja Reformada Comunidade da Cruz</p>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand -->
+          <div class="footer-col brand-col">
+            <img
+              src="assets/logo-footer.png"
+              alt="Igreja Reformada Comunidade da Cruz"
+              class="footer-logo"
+            />
+            <p class="footer-brand-name">Igreja Reformada Comunidade da Cruz</p>
+          </div>
+
+          <!-- Col 2: Navegue -->
+          <div class="footer-col nav-col">
+            <span class="footer-col-title">NAVEGUE</span>
+            <ul class="footer-links-list">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#horarios">Horários</a></li>
+              <li><a href="#nossa-igreja">Nossa Igreja</a></li>
+              <li><a href="#missoes">Missões</a></li>
+              <li><a href="#missio-dei">Instituto Missio Dei</a></li>
+              <li><a href="#missionarios">Missionários</a></li>
+              <li><a href="#eventos">Eventos</a></li>
+              <li><a href="#visite-nos">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Contato -->
+          <div class="footer-col contact-col">
+            <span class="footer-col-title">CONTATO</span>
+            <p class="footer-contact-item">
+              Av. Presidente Getúlio Vargas, S/N
+            </p>
+            <p class="footer-contact-item">Serraria · Maceió – AL</p>
+            <p class="footer-contact-item">CEP 57046-521</p>
+            <p class="footer-contact-item footer-phone">
+              WhatsApp (82) 99629-8697
+            </p>
+          </div>
+
+          <!-- Col 4: Redes -->
+          <div class="footer-col social-col">
+            <span class="footer-col-title">REDES</span>
+            <ul class="footer-links-list">
+              <li>
+                <a
+                  href="https://instagram.com/igrejacomunidadedacruz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtube.com/@IgrejaReformadaComunidadeDaCruz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >YouTube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://facebook.com/IgrejaComunidadeDaCruz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Col 2: Navegue -->
-        <div class="footer-col nav-col">
-          <span class="footer-col-title">NAVEGUE</span>
-          <ul class="footer-links-list">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#horarios">Horários</a></li>
-            <li><a href="#nossa-igreja">Nossa Igreja</a></li>
-            <li><a href="#missoes">Missões</a></li>
-            <li><a href="#missio-dei">Instituto Missio Dei</a></li>
-            <li><a href="#missionarios">Missionários</a></li>
-            <li><a href="#eventos">Eventos</a></li>
-            <li><a href="#visite-nos">Contato</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Contato -->
-        <div class="footer-col contact-col">
-          <span class="footer-col-title">CONTATO</span>
-          <p class="footer-contact-item">Av. Presidente Getúlio Vargas, S/N</p>
-          <p class="footer-contact-item">Serraria · Maceió – AL</p>
-          <p class="footer-contact-item">CEP 57046-521</p>
-          <p class="footer-contact-item footer-phone">WhatsApp (82) 99629-8697</p>
-        </div>
-
-        <!-- Col 4: Redes -->
-        <div class="footer-col social-col">
-          <span class="footer-col-title">REDES</span>
-          <ul class="footer-links-list">
-            <li><a href="https://instagram.com/igrejacomunidadedacruz" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://youtube.com/@IgrejaReformadaComunidadeDaCruz" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-            <li><a href="https://facebook.com/IgrejaComunidadeDaCruz" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          </ul>
+        <!-- Copyright Subfooter -->
+        <div class="subfooter">
+          <p class="copyright-text">
+            © 2026 Igreja Reformada Comunidade da Cruz · comunidadedacruz.org.br
+          </p>
+          <p class="pec-credit-text">Desenvolvido por alunos do PEC</p>
         </div>
       </div>
+    </footer>
 
-      <!-- Copyright Subfooter -->
-      <div class="subfooter">
-        <p class="copyright-text">© 2026 Igreja Reformada Comunidade da Cruz · comunidadedacruz.org.br</p>
-        <p class="pec-credit-text">Desenvolvido por alunos do PEC</p>
+    <!-- Floating WhatsApp Action Button -->
+    <a
+      href="https://wa.me/5582996298697?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Igreja%20Reformada%20Comunidade%20da%20Cruz."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="floating-whatsapp-btn"
+      id="floatingWhatsapp"
+      aria-label="Fale Conosco pelo WhatsApp"
+    >
+      <span class="status-dot"></span>
+      <span class="btn-text">WhatsApp</span>
+    </a>
+
+    <!-- Toast Notification -->
+    <div
+      class="toast-notification"
+      id="toastNotification"
+      aria-live="polite"
+    ></div>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal" aria-hidden="true">
+      <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
+      <div class="video-modal-dialog">
+        <button class="video-modal-close" id="videoModalClose">&times;</button>
+        <div class="video-iframe-wrapper">
+          <iframe
+            id="videoIframe"
+            src=""
+            title="Transmissão ao vivo / Último culto"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <!-- Floating WhatsApp Action Button -->
-  <a href="https://wa.me/5582996298697?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Igreja%20Reformada%20Comunidade%20da%20Cruz." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" id="floatingWhatsapp" aria-label="Fale Conosco pelo WhatsApp">
-    <span class="status-dot"></span>
-    <span class="btn-text">WhatsApp</span>
-  </a>
-
-  <!-- Toast Notification -->
-  <div class="toast-notification" id="toastNotification" aria-live="polite"></div>
-
-  <!-- Video Modal -->
-  <div class="video-modal" id="videoModal" aria-hidden="true">
-    <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
-    <div class="video-modal-dialog">
-      <button class="video-modal-close" id="videoModalClose">&times;</button>
-      <div class="video-iframe-wrapper">
-        <iframe id="videoIframe" src="" title="Transmissão ao vivo / Último culto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
